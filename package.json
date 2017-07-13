@@ -1,0 +1,14 @@
+{
+  "name": "eslint-plugin-binarycode",
+  "version": "0.0.1",
+  "author": "Igor Sidorov <igor.sidorov@onapp.com>",
+  "license": "MIT",
+  "description": "ESLint plugin with custom style guide rules",
+  "repository": "binarycode/eslint-plugin-binarycode",
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0"
+  }
+}
