@@ -1,12 +1,4 @@
-var RuleTester = require('eslint').RuleTester
-
-var rule = require('../../rules/simple-imports')
-
-var ruleTester = new RuleTester({
-  parserOptions: { sourceType:  "module" }
-})
-
-ruleTester.run('simple-imports', rule, {
+require('../index').test('simple-imports')({
   valid: [
     { code: 'import "module"' },
     { code: 'import foo from "module"' },
