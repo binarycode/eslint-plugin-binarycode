@@ -1,3 +1,5 @@
+'use strict';
+
 require('../index').test('simple-imports')({
   valid: [
     { code: 'import "module"' },

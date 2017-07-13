@@ -1,3 +1,5 @@
+'use strict';
+
 require('../index').test('sort-imports')({
   valid: [
     {

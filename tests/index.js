@@ -3,12 +3,12 @@
 var RuleTester = require('eslint').RuleTester
 
 var ruleTester = new RuleTester({
-  parserOptions: { sourceType:  "module" }
+  parserOptions: { sourceType: "module" }
 })
 
 module.exports = {
   test: function(ruleName) {
-    var rule = require('../rules/' + ruleName)
+    var rule = require('../lib/rules/' + ruleName)
 
     return function(cases) {
       ruleTester.run(ruleName, rule, cases)
@@ -16,5 +16,6 @@ module.exports = {
   }
 }
 
+require('./rules/align-imports.js')
 require('./rules/simple-imports.js')
 require('./rules/sort-imports.js')
