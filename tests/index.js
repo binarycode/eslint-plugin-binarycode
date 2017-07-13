@@ -17,5 +17,6 @@ module.exports = {
 }
 
 require('./rules/align-imports.js')
+require('./rules/import-spacing.js')
 require('./rules/simple-imports.js')
 require('./rules/sort-imports.js')
